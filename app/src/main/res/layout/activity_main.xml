@@ -1,56 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <ImageView
-        android:scaleType="centerCrop"
-        android:src="@drawable/pelangi"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <TextView
-        android:textSize="14sp"
-        style="@style/mystyle"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/day" />
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="20sp"
-        style="@style/mystyle"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/motivation"
-        />
-
-    <TextView
-        android:textStyle="italic"
-        android:textSize="14sp"
-        style="@style/mystyle"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/motivator"
-         />
-
-    <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="219dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginRight="166dp"
-        android:text="Halo Batu" />
+        android:layout_margin="16dp"
+        android:text="Nama:" />
 
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_margin="16dp"
+        android:hint="Isikan nama disini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Usia:" />
+
+    <EditText
+        android:id="@+id/et_usia"
+        android:layout_margin="16dp"
+        android:hint="Isikan usia disini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="kirim"
+        android:layout_margin="16dp"
+        android:text="Kirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
